@@ -1,0 +1,91 @@
+.featured {
+
+
+    &_heading {
+        margin: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 125%;
+        }
+
+        button {
+            border-radius: 50px;
+            background-color: $text-color;
+            border: none;
+            color: $white-color;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $background-color;
+                color: $text-color;
+            }
+        }
+
+    }
+
+    &_jobs {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 30px;
+
+        &_job-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 250px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            transition: transform 0.5 ease-in-out;
+
+            &:hover {
+                transform: scale(1.02);
+            }
+
+            &_type {
+                display: flex;
+                gap: 10px;
+            }
+
+            &_role {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                &_logo {
+                    height: 35px;
+                    width: 35px;
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
+
+                &_title {
+                    font-size: 20px;
+                    font-weight: bold;
+                    line-height: 150%;
+                }
+
+            }
+
+            &_description {
+                p {
+                    font-size: 14px;
+                    font-family: $inter-family;
+                    color: #2a2a2a;
+                    line-height: 150%;
+                }
+            }
+        }
+    }
+}

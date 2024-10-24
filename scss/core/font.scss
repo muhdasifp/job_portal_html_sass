@@ -1,0 +1,14 @@
+@mixin headline-text {
+    font-size: $headline-medium;
+    font-weight: bold;
+    color: $text-color;
+    line-height: 125%;
+    text-align: center;
+}
+
+@mixin sub-heading-text {
+    font-size: $title-small;
+    font-weight: 600;
+    line-height: 150%;
+    color: $text-color-3;
+}
